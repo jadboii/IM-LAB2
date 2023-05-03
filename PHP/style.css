@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Teko', sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(129, 171, 255, 0.3)), url('EDSA_-_Pasay_Tramo_(Pasay)(2017-08-04)_(3).jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+nav{
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 200px;
+    line-height: 60px;
+    z-index: 111;
+}
+
+#brngyPic{
+    padding-bottom: 5px;
+}
+
+.brngyLbl{
+    display: flex;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: 800;
+    color: rgba(57, 75, 120, 1);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.navItems{
+    display: flex;
+}
+
+.navItems li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.navItems li a{
+    font-size: 25px;
+    color: rgba(57, 75, 120, 1);
+    letter-spacing: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navItems li a::after{
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: rgb(33, 42, 65);
+    margin: auto;
+    display: block;
+}
+
+.navItems li a:hover::after{
+    width: 100%;
+    transition: width 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.navItems li a:hover{
+    color: rgb(45, 61, 101);
+}
+
+.logo{
+    position:relative;
+    top: -10px;
+}
+
+#officials{
+    border: none;
+    background-color: white;
+    height:700px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    box-shadow: 4px 4px 7px rgba(0,0,0,0.5);
+}
+
+#official-lbl{
+    background-color: rgba(57, 75, 120, 1);
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.row1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+    padding: 20px;
+    bottom: 5px;
+    padding-top: 50px;
+}
+
+.row1 h2,
+.row1 p{
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.row1 img{
+    display: block;
+    margin: auto;
+}
+
+.row2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.row2 h2,
+.row2 p{
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.row1 p{
+    font-style: italic;
+}
+
+.row2 p{
+    font-style: italic;
+
+}
+
+.row2 img{
+    display: block;
+    margin: auto;
+}
+
+#DataContainer{
+    border: none;
+    background-color: white;
+    min-height: 680px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    box-shadow: 4px 4px 7px rgba(0,0,0,0.5);
+}
+
+.table-bordered{
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table-bordered td{
+    text-align: center; 
+    font-weight: 400;
+    background-color: rgb(233, 233, 233);
+    margin: auto;
+    justify-content: center;
+    padding: 5px;
+    width: 700px;
+}
+
+.table-bordered th[scope="row"] {
+    text-align: center; 
+    font-weight: 400;
+    background-color: rgb(233, 233, 233);
+    margin: auto;
+    justify-content: center;
+    padding: 5px;
+    width: 700px;
+}
+
+.tbl-colHeader{
+    text-align: center;
+    background-color: rgb(56, 61, 74);
+    font-weight: 400;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    margin: auto;
+    justify-content: center;
+    padding: 5px;
+    width: 700px;
+}
+
+.btnEdit{
+    border-width: thick;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(51, 89, 202);
+    text-decoration: none;
+    color: white;
+}
+
+.btnDel{
+    border-width: thick;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(128, 46, 49);
+    text-decoration: none;
+    color: white;
+}
+
+.formSection1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+form{
+    margin: 8px;
+}
+
+form label{
+    padding: 2.5px;
+    font-size: 18px;
+    display: flex;
+    margin: auto;
+}
+
+form input {
+    height: 45px;
+    min-width: 300px;
+    padding: 5px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px ;
+}
+
+#rdbPWD{
+    height: 42px;
+    width: 20px;
+}
+
+#DataContainer2{
+    width: 600px;
+    border: none;
+    background-color: white;
+    min-height: 680px;
+    padding: 10px;
+    margin: 0 auto;
+    box-shadow: 4px 4px 7px rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+.btnSec{
+    align-items: center;
+    justify-content: center;
+}
+
+.btnSec button{
+    margin-top: 15px;
+    display:block;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgb(86, 114, 185);
+    color: white;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 15px;
+    width: 300px;
+    border-style: none;
+    cursor: pointer;
+    box-shadow: 4px 4px 7px rgba(0,0,0,0.5);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.btnSec button:hover, .btnSec button:focus, .btnSec button:active{
+    box-shadow: 4px 4px 14px rgba(0,0,0,0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.warningMsg{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    background-color: rgb(197, 98, 98);
+    border: 2px solid rgb(169, 38, 38);
+    border-radius: 6px;
+    color: rgb(250, 210, 210);
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.successMsg{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    background-color: rgb(124, 227, 143);
+    border: 2px solid rgb(63, 109, 71);
+    border-radius: 6px;
+    color: rgb(226, 255, 231);
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
